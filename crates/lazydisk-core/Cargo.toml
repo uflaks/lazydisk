@@ -1,0 +1,27 @@
+[package]
+name = "lazydisk-core"
+description = "Scanning, tree model, sunburst geometry and app state shared by the lazydisk frontends"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+dua-core.workspace = true
+crossbeam-channel.workspace = true
+parking_lot.workspace = true
+trash.workspace = true
+nix.workspace = true
+libc.workspace = true
+serde.workspace = true
+toml.workspace = true
+dirs.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+proptest.workspace = true
+
+[lints]
+workspace = true

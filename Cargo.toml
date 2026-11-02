@@ -1,0 +1,43 @@
+[workspace]
+resolver = "3"
+members = ["crates/lazydisk-core", "crates/lazydisk-tui", "crates/lazydisk-gpui"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT"
+repository = "https://github.com/henrikeidlaug/lazydisk"
+
+[workspace.dependencies]
+lazydisk-core = { path = "crates/lazydisk-core" }
+dua-core = "6"
+crossbeam-channel = "0.5"
+parking_lot = "0.12"
+trash = "5"
+nix = { version = "0.31", features = ["fs"] }
+libc = "0.2"
+serde = { version = "1", features = ["derive"] }
+toml = "1"
+dirs = "7"
+thiserror = "2"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-appender = "0.2"
+ratatui = "0.30"
+crossterm = "0.29"
+tempfile = "3"
+proptest = "1"
+insta = "1"
+
+[workspace.lints.rust]
+unsafe_code = "warn"
+[workspace.lints.clippy]
+all = "warn"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = true

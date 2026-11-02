@@ -1,0 +1,22 @@
+[package]
+name = "lazydisk-gpui"
+description = "lazydisk desktop: keyboard-driven disk space analyzer with a sunburst map (gpui)"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "lazydisk-desktop"
+path = "src/main.rs"
+
+[dependencies]
+lazydisk-core.workspace = true
+gpui = { package = "gpui-ce", version = "0.3" }
+gpui_platform = { package = "gpui_ce_platform", version = "0.3" }
+clap.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+
+[lints]
+workspace = true
