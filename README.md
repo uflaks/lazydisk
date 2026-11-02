@@ -38,6 +38,8 @@ selects it, clicking a folder opens it, clicking the centre goes up, scrolling o
 sunburst moves up and down, and the File and Go menus carry the usual macOS shortcuts
 (⌘O open folder, ⇧⌘R rescan, ⌘[ ⌘] history, ⌘↑ enclosing folder, ⌘⌫ move collected to Trash).
 
+![lazydisk desktop app: the same panels in a window, with a labelled sunburst that follows the pointer](docs/img/desktop-root-scan.png)
+
 ## Using it
 
 The screen has four numbered panels; press the number or `tab` to focus one.
