@@ -4,20 +4,7 @@ A keyboard-driven disk space analyzer for macOS (and Linux) written in Rust.
 It shows what is using your disk as a DaisyDisk-style sunburst map and lets you
 browse, collect and delete with lazygit-style single-key commands.
 
-```
-┌1 Volumes──────────┐ ~/Library  42.1 GiB  allocated  88,102 files, 1,204 folders
-│●Macintosh HD ▰▰▰▰▰│                 ▄▄██████▄▄
-│ Backup       ▰▰▱▱▱│              ▄██▀▀▀    ▀▀▀██▄
-├2 Files────────────┤             ██▀   Library    ▀██
-│✓▶ Caches    12.3G │             ██    42.1 GiB    ██
-│ ▶ Applicati… 9.0G │             ▀██▄   Caches   ▄██▀
-│ ▶ Containers 7.2G │              ▀▀██▄▄▄    ▄▄▄██▀▀
-│ · bigfile.bin 1.1G│                  ▀▀██████▀▀
-├3 Collector────────┤┌4 Details────────────────────────────────────────┐
-│ Caches      12.3G ││/Users/me/Library/Caches  folder  12.3 GiB …      │
-└───────────────────┘└─────────────────────────────────────────────────┘
-? help  j/↓ move  l/enter open  h/esc up  c collect  d trash  / filter   ⠹ scanning 1.2M items
-```
+![lazydisk scanning the startup volume: Files panel on the left, sunburst map and Details panel on the right](docs/img/tui-root-scan.png)
 
 Two frontends share one core:
 
