@@ -1,8 +1,10 @@
 # lazydisk
 
 A keyboard-driven disk space analyzer for macOS (and Linux) written in Rust.
-It shows what is using your disk as a DaisyDisk-style sunburst map and lets you
-browse, collect and delete with lazygit-style single-key commands.
+It shows what is using your disk as a sunburst map and lets you browse, collect
+and delete with single-key commands. Inspired by
+[lazygit](https://github.com/jesseduffield/lazygit) and
+[DaisyDisk](https://daisydiskapp.com).
 
 ![lazydisk scanning the startup volume: Files panel on the left, sunburst map and Details panel on the right](docs/img/tui-root-scan.png)
 
