@@ -7,7 +7,7 @@ version = "0.1.0"
 edition = "2024"
 rust-version = "1.95"
 license = "MIT"
-repository = "https://github.com/henrikeidlaug/lazydisk"
+repository = "https://github.com/uflaks/lazydisk"
 
 [workspace.dependencies]
 lazydisk-core = { path = "crates/lazydisk-core" }
